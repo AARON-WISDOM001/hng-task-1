@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <article class="profile-card" data-testid="test-profile-card">
+
+    <header class="profile-header">
+      <figure class="profile-avatar-figure">
+        <img src="https://i.postimg.cc/kXPX0NC1/Gemini-Generated-Image-xxs2muxxs2muxxs2.png"
+          alt="User's profile avatar: A stylized image with the letters png" data-testid="test-user-avatar"
+          class="profile-avatar">
+        <figcaption class="sr-only">Profile photo of Aaron Wisdom</figcaption>
+      </figure>
+
+      <div class="profile-text-content">
+        <h2 data-testid="test-user-name" aria-label="User Name">Aaron Wisdom</h2>
+        <p data-testid="test-user-bio">
+          Frontend developer and design enthusiast. I specialize in building accessible,
+          high-performance web interfaces using modern frameworks. Passionate about
+          clean code and user experience.
+        </p>
+        <p class="current-time-display">
+          <small>Current Time (ms): <span data-testid="test-user-time">LOADING...</span></small>
+        </p>
+      </div>
+    </header>
+
+    <hr>
+
+    <section class="profile-socials-section">
+      <h3>Connect with Aaron</h3>
+      <nav class="social-links-container" data-testid="test-user-social-links">
+        <ul>
+          <li>
+            <a href="https://x.com/AaronWisdo45112" target="_blank" rel="noopener noreferrer"
+              data-testid="test-user-social-twitter" aria-label="Jane's Twitter profile">
+              Twitter/X
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/AARON-WISDOM001/AARON-WISDOM001" target="_blank" rel="noopener noreferrer"
+              data-testid="test-user-social-github" aria-label="Jane's GitHub profile">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/wisdom-aaron-6104792b2/" target="_blank" rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin" aria-label="Jane's LinkedIn profile">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <hr>
+
+    <div class="profile-lists-container">
+      <section class="profile-hobbies">
+        <h3>Hobbies</h3>
+        <ul data-testid="test-user-hobbies">
+          <li>Hiking and Nature Photography</li>
+          <li>Reading Sci-Fi and Fantasy</li>
+          <li>Mechanical Keyboards</li>
+          <li>Baking Sourdough</li>
+        </ul>
+      </section>
+
+      <section class="profile-dislikes">
+        <h3>Dislikes</h3>
+        <ul data-testid="test-user-dislikes">
+          <li>Unnecessary pop-ups</li>
+          <li>Lack of clear documentation</li>
+          <li>Sticky keyboard keys</li>
+          <li>Overly complex build systems</li>
+        </ul>
+      </section>
+    </div>
+
+  </article>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

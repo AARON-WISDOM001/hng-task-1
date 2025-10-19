@@ -1,0 +1,190 @@
+/* Basic Reset and Global Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f9;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* --- Profile Card Container --- */
+.profile-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* Headings and Text */
+.profile-card h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.profile-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1.2em;
+}
+
+.profile-card p {
+  line-height: 1.5;
+  color: #666;
+  word-wrap: break-word;
+  /* Ensure text wraps */
+}
+
+/* Separator */
+.profile-card hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+/* --- Avatar and Header Layout (Responsive Flexbox) --- */
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  /* Stack vertically on mobile */
+  align-items: center;
+  /* Center items when stacked */
+  text-align: center;
+  gap: 20px;
+}
+
+.profile-avatar-figure {
+  margin: 0;
+  /* Remove default figure margin */
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /* Circular avatar */
+  object-fit: cover;
+  border: 4px solid #1ABC9C;
+}
+
+/* Text content alignment */
+.profile-text-content {
+  flex-grow: 1;
+}
+
+.current-time-display {
+  color: #999;
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+
+/* --- Social Links --- */
+
+.social-links-container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows links to wrap on small screens */
+  gap: 15px;
+  justify-content: center;
+  /* Center links on mobile */
+}
+
+.social-links-container a {
+  text-decoration: none;
+  color: #1ABC9C;
+  background-color: #e8f8f5;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.social-links-container a:hover,
+.social-links-container a:focus {
+  background-color: #1ABC9C;
+  color: white;
+  outline: 2px solid #1ABC9C;
+  /* Visible focus style */
+  outline-offset: 2px;
+}
+
+/* Accessibility: Visually hidden but readable element for figure caption */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* --- Hobbies and Dislikes Lists --- */
+
+.profile-lists-container {
+  display: flex;
+  flex-direction: column;
+  /* Stack vertically on mobile */
+  gap: 30px;
+}
+
+.profile-lists-container ul {
+  list-style: square;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.profile-lists-container li {
+  margin-bottom: 5px;
+  color: #444;
+}
+
+
+/* --- Media Queries for Tablet/Desktop Layout --- */
+
+@media (min-width: 600px) {
+
+  /* Header layout changes on wider screens */
+  .profile-header {
+    flex-direction: row;
+    /* Avatar left, text right */
+    text-align: left;
+  }
+
+  /* Adjust text content alignment on wider screens */
+  .profile-text-content {
+    align-self: flex-start;
+    /* Aligns text block to the top of the flex container */
+  }
+
+  .social-links-container ul {
+    justify-content: flex-start;
+    /* Align links to the left */
+  }
+
+  
+  .profile-lists-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .profile-hobbies,
+  .profile-dislikes {
+    flex-basis: 48%;
+    
+  }
+}
