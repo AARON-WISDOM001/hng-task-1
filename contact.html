@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contact page</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header_container custom__flex">
+    <h1>Airon 🐱‍👤 </h1>
+    <nav class="nav__bar custom__flex">
+      <li><a href="./index.html">Profile Page</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./about.html">About Me</a></li>
+
+    </nav>
+  </header>
+  <main class="main_container custom__flex">
+    <h3>Contact Us</h3>
+    <dialog id="myDialog" data-testid="test-contact-success" class="modal-dialog-centered">
+      <h4 class="mb-1"><i class="bi bi-check-circle"></i> Message sent!</h4>
+      <p class="fw-lighter mb-0">
+        Thanks for completing the form. We will get in touch soon.
+      </p>
+    </dialog>
+    
+
+    <section class="contact-form" data-testid="test-contact-page">
+      <form novalidate>
+        <section>
+          <label for="name" data-testid="test-contact-name-label" class="sr-only"></label>Full Name:
+
+          <input type="text" id="name" name="name" data-testid="test-contact-name"
+            aria-describedby="test-contact-error-name" />
+          <span id="test-contact-error-name" data-testid="test-contact-error-name" style="color: red"></span>
+        </section>
+        <section>
+          <label for="email" data-testid="test-contact-email-label" class="sr-only">Email:</label>
+          <input type="email" id="email" name="email" data-testid="test-contact-email"
+            aria-describedby="test-contact-error-email" />
+          <span id="test-contact-error-email" data-testid="test-contact-error-email" style="color: red"></span>
+        </section>
+        <section>
+          <label for="subject" data-testid="test-contact-subject-label" class="sr-only">Subject:</label>
+          <input type="text" id="subject" name="subject" data-testid="test-contact-subject"
+            aria-describedby="test-contact-error-subject" />
+          <span id="test-contact-error-subject" data-testid="test-contact-error-subject" style="color: red"></span>
+        </section>
+        <section>
+          <label for="message" data-testid="test-contact-message-label" class="sr-only">Message:</label>
+          <textarea id="message" name="message" data-testid="test-contact-message"
+            aria-describedby="test-contact-error-message"></textarea>
+          <span id="test-contact-error-message" data-testid="test-contact-error-message" style="color: red"></span>
+        </section>
+        <button type="submit" data-testid="test-contact-submit">Submit</button>
+        <!--<div id="success-message" data-testid="test-contact-success" style="display:none;color:green;">Your message has been sent successfully!</div>-->
+      </form>
+    </section>
+  </main>
+    <script src="contact.js"></script>
+</body>
+
+</html>

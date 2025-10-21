@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me page</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+  <!--2. About Me Page
+A reflective page where you share your thoughts.
+Required sections (data-testid for each):
+Bio — test-about-bio
+Goals in this program — test-about-goals
+Areas of low confidence — test-about-confidence
+Note to future self — test-about-future-note
+Extra thoughts — test-about-extra
+Semantic structure:
+Wrap with <main data-testid="test-about-page">.
+Use <section> for each area.
+Use proper headings (<h2>, <h3>) for clarity.
+:white_check_mark: Acceptance Criteria
+Contact Us Page
+All required fields exist and use correct data-testids.
+Validation prevents invalid submissions.
+Success message only shows after valid submission.
+About Me Page
+All required sections exist with correct data-testids.
+Semantic HTML used (main, section, ul, p, h2).
+General
+Semantic HTML throughout.
+Accessible (labels, alt text, ARIA associations).
+Fully responsive across mobile, tablet, desktop.
+Keyboard navigable.
+Code is modular, readable, and consistent.
+-->
+  <header class="header_container custom__flex">
+    <h1>Airon 🐱‍👤 </h1>
+    <nav class="nav__bar custom__flex">
+      <li><a href="./index.html">Profile Page</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./about.html">About Me</a></li>
+
+    </nav>
+  </header>
+  
+  <main data-testid="test-about-page" class="main_container">
+    <header class="about-text-header" data-testid="header-text">
+      <h1>About Me</h1>
+    </header>
+
+    <article>
+      
+      <section>
+        <h2>Bio</h2>
+        <p data-testid="test-about-bio">I’m Aaron Wisdom — a curious creator who loves learning, building, and
+          experimenting with new ideas. I enjoy turning
+          concepts into clean, functional web projects using HTML, CSS, and JavaScript. I’m always exploring ways to
+          improve,
+          learn faster, and make things that actually work and feel good to use.</p>
+      </section>
+
+      <section>
+        <h2>Goals in this program</h2>
+        <p data-testid="test-about-goals">My goals include mastering modern frontend frameworks, improving my
+          problem-solving skills, and contributing to open-source projects to enhance my learning and give back to the
+          community.</p>
+      </section>
+
+      <section>
+        <h2>Areas of low confidence</h2>
+        <p data-testid="test-about-confidence">I feel less confident in backend development and database management. I
+          plan to focus on these areas to become a more well-rounded developer.</p>
+      </section>
+
+      <section>
+        <h2>Note to future self</h2>
+        <p data-testid="test-about-future-note">Remember to stay curious and keep learning. The tech industry is always
+          evolving, so adaptability and continuous improvement are key to success. I love you my dear self.</p>
+      </section>
+
+      <section>
+        <h2>Extra thoughts</h2>
+        <p data-testid="test-about-extra">Collaboration and networking are essential in this field. Building
+          relationships with other developers can lead to new opportunities and insights.</p>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>

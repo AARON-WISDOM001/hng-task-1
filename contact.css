@@ -1,0 +1,143 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #834ffe 0%, #00f2fe 50%, #43e97b 100%);
+}
+
+.main_container{
+  margin-top: 5rem;
+  padding-top: 80px;
+}
+
+h3 {
+  text-align: start;
+  margin: 1rem 0.5rem;
+  color: white;
+  font-family: "BBH Sans Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  margin: 0;
+}
+
+.contact-form {
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  margin: 5rem auto;
+  background-color: white;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#error-name,
+#error-email,
+#error-subject,
+#error-message {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: red;
+}
+
+.nav__bar {
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid #e7b1b1;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+a:active {
+  border-bottom: 2px solid #007bff;
+}
+
+a:hover {
+  color: #007bff;
+  background-color: paleturquoise;
+  padding: 5px;
+  border-radius: 5px;
+  transform: scaleY(1.2);
+}
+
+.header_container {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+span {
+  color: red;
+  font-size: small;
+}
+
+@media (min-width: 600px) {
+  .contact-form {
+    width: 500px;
+  }
+
+  h3 {
+    text-align: start;
+    margin: 2rem 1rem;
+    color: white;
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+    .main_container {
+      margin-top: 5rem;
+      padding-top: 70px;
+    }
+}
